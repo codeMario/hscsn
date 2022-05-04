@@ -203,6 +203,14 @@
 				--web-scale-on-resize: true;
 				--web-enable-deep-linking: true;
 			}
+			#Portal_Signon_Graphic-01 {
+				position: absolute;
+				width: 786px;
+				height: 768.129px;
+				left: 580px;
+				top: 0px;
+				overflow: visible;
+			}
 			#Rectangle_6 {
 				fill: rgba(8,125,193,1);
 			}
@@ -3904,10 +3912,7 @@
 			window.application = new Application();
 		</script>
 		<div id="Sign_In">
-			<svg class="Rectangle_6">
-				<rect id="Rectangle_6" rx="0" ry="0" x="0" y="0" width="786" height="768">
-				</rect>
-			</svg>
+			<img style="position:absolute;width:786px;height:768.129px;left:580px;top:0px;overflow:visible;" id="Portal_Signon_Graphic-01" src="/o/hscsn-theme/images/Portal_Signon_Graphic-01.png"/>
 			<div id="METADATA_u">
 				<span>{"config":{},"nodeName":"- Sign in with -","type":"Group","theme":"Base","__plugin":"Mockup","__version":"1.5.0","__lastUpdate":"2022-03-29T22:48:50.399Z"}</span>
 			</div>
