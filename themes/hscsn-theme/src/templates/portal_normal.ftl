@@ -36,30 +36,35 @@
 			</div>
 		</div>
 
-		<#if !is_signed_in>
-			<a data-redirect="${is_login_redirect_required?string}" href="${sign_in_url}" id="sign-in" rel="nofollow">${sign_in_text}</a>
-		</#if>
-
-		<#if has_navigation && is_setup_complete>
-			<#include "${full_templates_path}/navigation.ftl" />
-		</#if>
 	</header>
 
-	<section id="content">
-		<h2 class="hide-accessible" role="heading" aria-level="1">${the_title}</h2>
+	<div class="" id="main-content" role="main">
+		<div class="portlet-layout row">
+			<div class="col-md-3 portlet-column portlet-column-first" id="column-1">
+				<#if has_navigation && is_setup_complete>
+					<#include "${full_templates_path}/navigation.ftl" />
+				</#if>
+			</div>
+			<div class="col-md-9 portlet-column portlet-column-last" id="column-2">
+				<section id="content">
+					<h2 class="hide-accessible" role="heading" aria-level="1">${the_title}</h2>
 
-		<#if selectable>
-			<@liferay_util["include"] page=content_include />
-		<#else>
-			${portletDisplay.recycle()}
+					<#if selectable>
+						<@liferay_util["include"] page=content_include />
+					<#else>
+						${portletDisplay.recycle()}
 
-			${portletDisplay.setTitle(the_title)}
+						${portletDisplay.setTitle(the_title)}
 
-			<@liferay_theme["wrap-portlet"] page="portlet.ftl">
-				<@liferay_util["include"] page=content_include />
-			</@>
-		</#if>
-	</section>
+						<@liferay_theme["wrap-portlet"] page="portlet.ftl">
+							<@liferay_util["include"] page=content_include />
+						</@>
+					</#if>
+				</section>
+			</div>
+		</div>
+	</div>
+
 
 	<footer id="footer" role="contentinfo">
 <#--		<p class="powered-by">-->
