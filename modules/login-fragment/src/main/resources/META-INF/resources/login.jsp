@@ -804,8 +804,8 @@
 				top: 0px;
 			}
 			#Label_bk {
-				left: 127.812px;
-				top: 24.27px;
+				left: 24.812px;
+				top: 85.27px;
 				position: absolute;
 				overflow: visible;
 				width: 48px;
@@ -822,7 +822,7 @@
 				width: 303.648px;
 				height: 65.539px;
 				left: 141.795px;
-				top: 556.656px;
+				top: 424.656px;
 				overflow: visible;
 			}
 			#METADATA_bm {
@@ -3982,17 +3982,6 @@
 			<div id="METADATA_bb">
 				<span>{"config":{"STATE":"DEFAULT","STYLE":"STYLE2","ICON":"feather/x"},"type":"Icon","theme":"Base","__plugin":"Mockup","__version":"1.5.0","__lastUpdate":"2022-03-29T22:48:50.456Z","nodeName":"Icon [ICON=feather/x][SIZE=MEDIUM][STATE=DEFAULT][STYLE=STYLE2]"}</span>
 			</div>
-			<svg class="Line" viewBox="0 0 71.796 2">
-				<path id="Line" d="M 0 0 L 71.79630279541016 0">
-				</path>
-			</svg>
-			<svg class="Line_" viewBox="0 0 71.796 2">
-				<path id="Line_" d="M 0 0 L 71.79630279541016 0">
-				</path>
-			</svg>
-			<div id="Typography_TAGUI_S">
-				<span>Or Sign In With</span>
-			</div>
 <%--			<svg class="Area_DISPLAY_ELEMENTSLabelSTAT">--%>
 <%--				<rect id="Area_DISPLAY_ELEMENTSLabelSTAT" rx="0" ry="0" x="0" y="0" width="31.493" height="31.493">--%>
 <%--				</rect>--%>
@@ -4016,9 +4005,6 @@
 				<aui:input name="password" showRequiredLabel="<%= false %>" label="" type="password" value="<%= password %>" placeholder="Password">
 					<aui:validator name="required" />
 				</aui:input>
-				<div>
-					<a href="${forgotPasswordURL}"><span>Forgot Password</span></a>
-				</div>
 			</div>
 <%--			<svg class="Area_DISPLAY_ELEMENTSDefaultST_bc">--%>
 <%--				<rect id="Area_DISPLAY_ELEMENTSDefaultST_bc" rx="0" ry="0" x="0" y="0" width="302.623" height="47.665">--%>
@@ -4034,12 +4020,6 @@
 					</c:if>
 				</aui:input>
 			</div>
-			<div id="Create_an_account_TAGA">
-				<a href="${createAccountURL}"><span>Create an account</span></a>
-			</div>
-			<div id="New_user_TAGH6">
-				<span>New user?</span>
-			</div>
 			<div id="Title_TAGH4">
 				<span>Sign In</span>
 			</div>
@@ -4052,7 +4032,7 @@
 <%--					</rect>--%>
 <%--				</svg>--%>
 				<div id="Label_bk">
-					<span><aui:button type="submit" value="sign-in" /></span>
+					<span><aui:button type="submit" value="Sign in with HSCSN Credentials" /></span>
 				</div>
 			</div>
 			<div id="Button_bl">
