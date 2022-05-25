@@ -10,6 +10,10 @@
 	<meta content="initial-scale=1.0, width=device-width" name="viewport" />
 
 	<@liferay_util["include"] page=top_head_include />
+
+	<link rel="stylesheet" href="${css_folder}/portal.css">
+
+	<script src="${javascript_folder}/chart.js/chart.min.js"></script>
 </head>
 
 <body class="${css_class}">
